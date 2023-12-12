@@ -20,7 +20,7 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = with pkgs; [ node2nix nodejs pnpm yarn watchman zulu11 ruby_3_2 rubyPackages_3_2.cocoapods rubyPackages_3_2.activesupport ];
+          packages = with pkgs; [ node2nix nodejs pnpm yarn watchman zulu11 ruby_3_2 bundler ];
         };
       });
     };
